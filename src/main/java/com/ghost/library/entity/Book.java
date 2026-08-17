@@ -78,7 +78,7 @@ public class Book {
     @OneToMany(mappedBy = "book")
     private List<Loan> loans = new ArrayList<>();
 
-    public void AddAuthor(Author author) {
+    public void addAuthor(Author author) {
         authors.add(author);
         author.getBooks().add(this);
     }
